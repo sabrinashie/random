@@ -47,7 +47,7 @@ while fails < maxfails:
         # We use a while loop to check for duplicates of the character in the word.
         while letter_index < len(word):
             # We check to see if guess is in the rest of the word. Notice that
-            # we are checking a *spliced* version of word in the if conditional.
+            # we are checking a *sliced* version of word in the if conditional.
             # For example, if word == "banana", and guess == "a", initially
             # letter_index == 0. Then after line 65, we find our first
             # occurrence of "a" at index 1, so letter_index is set to 1.
