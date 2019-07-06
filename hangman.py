@@ -13,16 +13,16 @@ word = word.lower()
 
 # Make it a list of letters for someone to guess
 # This line makes current_word the same length as word.
-current_word = ["_"]*len(word) 
+current_word = ["_"] * len(word) 
 
 # Some useful variables
 guesses = []
 maxfails = 7
 fails = 0
 
-#Since we initialized fails to 0 and maxfails to 7,
-#we will only allowed to fail 7 times before the while
-#loop stops.
+# Since we initialized fails to 0 and maxfails to 7,
+# we will only allowed to fail 7 times before the while
+# loop stops.
 while fails < maxfails:
 
     #Ask the user to input a letter, which we will store in a variable we named guess.
@@ -38,7 +38,7 @@ while fails < maxfails:
     # This checks for the case where the letter is not in the word.
     elif guess not in word:
         # Only update the number of fails if we guess wrong.
-        fails = fails+1
+        fails = fails + 1
         print("Letter %s is not in the word!" % guess)
 
     # This checks for the case where the character is in the word.
